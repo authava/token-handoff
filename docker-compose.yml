@@ -1,0 +1,7 @@
+services:
+  token-handoff:
+    build: .
+    image: authava/token-handoff
+    ports:
+      - "3000:3000"
+    env_file: .env
